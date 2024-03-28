@@ -12,7 +12,6 @@ Download the files named "Stanford3dDataset_v1.2_Aligned_Version.zip". Uncompres
 
 ## 2 Data preprocessing
 ![Example Image](https://github.com/WJHjianhua/NLA-GCL-Net/blob/main/Fig/-1.jpg)
-![image](https://github.com/WJHjianhua/NLA-GCL-Net/blob/main/Fig/-1.jpg?raw=true)
 ### 2.1 SensatUrban
 ```
 python input_preparation.py --dataset_path $YOURPATH
