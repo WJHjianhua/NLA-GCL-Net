@@ -1,5 +1,5 @@
 from os.path import join, exists, dirname, abspath
-from RandLANet import Network
+from NLA-GCL-Net import Network
 from tester_SensatUrban import ModelTester
 from helper_ply import read_ply
 from tool import ConfigSensatUrban as cfg
