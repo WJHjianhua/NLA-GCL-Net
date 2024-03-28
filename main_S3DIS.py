@@ -2,9 +2,9 @@ from os.path import join
 from NLA-GCL-Net import Network
 from tester_S3DIS import ModelTester
 from helper_ply import read_ply
-from helper_tool import ConfigS3DIS as cfg
-from helper_tool import DataProcessing as DP
-from helper_tool import Plot
+from tool import ConfigS3DIS as cfg
+from tool import DataProcessing as DP
+from tool import Plot
 import tensorflow._api.v2.compat.v1 as tf
 tf.disable_v2_behavior()
 import numpy as np
