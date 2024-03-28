@@ -26,6 +26,12 @@ python utils/data_prepare_s3dis.py
 
 ## 3 Train
 ### 3.1 SensatUrban
-
+python main_SensatUrban.py --mode train --gpu 0 
 ### 3.2 S3DIS
 python main_S3DIS.py --gpu 0 --mode train --test_area 5
+
+## 4 Test
+### 4.1 SensatUrban
+python main_SensatUrban.py --mode test --gpu 0 
+### 4.2 S3DIS
+python main_S3DIS.py --gpu 0 --mode test --test_area 5
