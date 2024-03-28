@@ -1,9 +1,3 @@
-""" Wrapper functions for TensorFlow layers.
-
-Author: Charles R. Qi
-Date: November 2016
-"""
-
 import numpy as np
 import tensorflow._api.v2.compat.v1 as tf
 tf.disable_v2_behavior()
