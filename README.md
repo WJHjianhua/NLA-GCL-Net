@@ -7,3 +7,6 @@ Unzip the downloaded data_release.zip file to ensure that the directory structur
 
 ### 1.2 S3DIS
 URL:http://buildingparser.stanford.edu/dataset.html
+
+Download the files named "Stanford3dDataset_v1.2_Aligned_Version.zip". Uncompress the folder and move it to /data/S3DIS.
+
