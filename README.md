@@ -11,7 +11,7 @@ URL:http://buildingparser.stanford.edu/dataset.html
 Download the files named "Stanford3dDataset_v1.2_Aligned_Version.zip". Uncompress the folder and move it to /data/S3DIS.
 
 ## 2 Data preprocessing
-### 1.1 SensatUrban
+### 2.1 SensatUrban
 ```
 python input_preparation.py --dataset_path $YOURPATH
 cd $YOURPATH; 
@@ -19,8 +19,13 @@ cd ../; mkdir original_block_ply; mv data_release/train/* original_block_ply; mv
 mv data_release/grid* ./
 ```
 
-### 1.2 S3DIS
+### 2.2 S3DIS
 ```
 python utils/data_prepare_s3dis.py
-sh jobs_6_fold_cv_s3dis.sh
 ```
+
+## 3 Train
+### 3.1 SensatUrban
+
+### 3.2 S3DIS
+python main_S3DIS.py --gpu 0 --mode train --test_area 5
