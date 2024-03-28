@@ -2,7 +2,7 @@ from os import makedirs
 from os.path import exists, join
 from helper_ply import write_ply
 from sklearn.metrics import confusion_matrix
-from helper_tool import DataProcessing as DP
+from tool import DataProcessing as DP
 import tensorflow._api.v2.compat.v1 as tf
 tf.disable_v2_behavior()
 import numpy as np
