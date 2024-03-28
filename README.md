@@ -46,4 +46,5 @@ python main_S3DIS.py --gpu 0 --mode test --test_area 5
 
 ![Fig 7](https://github.com/WJHjianhua/NLA-GCL-Net/assets/162021896/17cbb30b-5570-4dee-8b69-39503207ce6a)
 
+![FIGs3dis](https://github.com/WJHjianhua/NLA-GCL-Net/assets/162021896/30eec87d-c66f-4588-9342-cf5877b65255)
 
