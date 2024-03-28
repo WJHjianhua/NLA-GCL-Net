@@ -43,4 +43,6 @@ python main_SensatUrban.py --mode test --gpu 0
 python main_S3DIS.py --gpu 0 --mode test --test_area 5
 ```
 ## 5 Qualitative results of our NLA-GCL-Net:
-
+| ![z](imgs/Semantic3D-1.gif)    | ![z](http://randla-net.cs.ox.ac.uk/imgs/Semantic3D-2.gif)   |
+| -------------------------------- | ------------------------------- |
+| ![z](imgs/Semantic3D-3.gif)    | ![z](imgs/Semantic3D-4.gif)   |
