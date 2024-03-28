@@ -11,6 +11,7 @@ URL:http://buildingparser.stanford.edu/dataset.html
 Download the files named "Stanford3dDataset_v1.2_Aligned_Version.zip". Uncompress the folder and move it to /data/S3DIS.
 
 ## 2 Data preprocessing
+![Example Image](https://github.com/WJHjianhua/NLA-GCL-Net/blob/main/Fig/-1.jpg)
 ![image](https://github.com/WJHjianhua/NLA-GCL-Net/blob/main/Fig/-1.jpg?raw=true)
 ### 2.1 SensatUrban
 ```
