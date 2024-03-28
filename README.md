@@ -42,3 +42,5 @@ python main_SensatUrban.py --mode test --gpu 0
 ```
 python main_S3DIS.py --gpu 0 --mode test --test_area 5
 ```
+## 5 Qualitative results of our NLA-GCL-Net:
+
