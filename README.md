@@ -44,8 +44,6 @@ python main_SensatUrban.py --mode test --gpu 0
 python main_S3DIS.py --gpu 0 --mode test --test_area 5
 ```
 ## 5 Results of our NLA-GCL-Net:
-
-![Fig 7](https://github.com/WJHjianhua/NLA-GCL-Net/assets/162021896/17cbb30b-5570-4dee-8b69-39503207ce6a)
-
+(https://github.com/WJHjianhua/NLA-GCL-Net/blob/main/Fig/Fig.7.jpg?raw=true)
 ![FIGs3dis](https://github.com/WJHjianhua/NLA-GCL-Net/assets/162021896/30eec87d-c66f-4588-9342-cf5877b65255)
 
