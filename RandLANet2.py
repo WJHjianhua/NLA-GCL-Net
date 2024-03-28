@@ -136,7 +136,8 @@ class Network:
             feature = f_decoder_i
             f_decoder_list.append(f_decoder_i)
         # ###########################Decoder############################
-        # ########################### 聚合分类器 ############################
+        
+        # ########## Neighborhood Label Aggregation Classifier ################
         f_layer_fc1 = helper_tf_util.conv2d(f_decoder_list[-1], 32, [1, 1], 'fc1', [1, 1], 'VALID', True, is_training)
         f_layer_fc2 = helper_tf_util.conv2d(f_layer_fc1, 32, [1, 1], 'fc2', [1, 1], 'VALID', True, is_training)
         f_neigh = self.gather_neighbour(tf.squeeze(f_layer_fc2, axis=2), inputs['neigh_idx'][0])
@@ -147,7 +148,7 @@ class Network:
                                             is_training, activation_fn=None)
         f_out = tf.squeeze(f_layer_fc3, [2])
         return f_out
-        # ########################### 聚合分类器 ############################
+        # ########## Neighborhood Label Aggregation Classifier. ##############
 
     def train(self, dataset):
         log_out('****EPOCH {}****'.format(self.training_epoch), self.Log_file)
@@ -279,7 +280,7 @@ class Network:
                                      activation_fn=None)
         shortcut = helper_tf_util.conv2d(feature, d_out * 2, [1, 1], name + 'shortcut', [1, 1], 'VALID',
                                          activation_fn=None, bn=True, is_training=is_training)
-        # 全局特征提取
+        # Global Context Learning Module.
         lg_volume_ratio = self.global_context_learning(xyz, f_pc, neigh_idx, d_out, name + 'LFA', is_training)
         f_gc = tf.expand_dims(tf.concat([xyz, lg_volume_ratio], axis=-1), -2)
         f_gc = helper_tf_util.conv2d(f_gc, d_out * 2, [1, 1], name + 'lg', [1, 1], 'VALID', activation_fn=None, bn=True,
@@ -322,7 +323,7 @@ class Network:
 
         return local_volume
 
-        # 全局特征提取
+        # Global Context Learning Module.
 
     def building_block(self, xyz, feature, neigh_idx, d_out, name, is_training):
         d_in = feature.get_shape()[-1].value
