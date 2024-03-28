@@ -45,6 +45,6 @@ python main_S3DIS.py --gpu 0 --mode test --test_area 5
 ```
 ## 5 Results of our NLA-GCL-Net:
 ![image](https://github.com/WJHjianhua/NLA-GCL-Net/blob/main/Fig/Fig.7.jpg?raw=true)
-![image](https://github.com/WJHjianhua/NLA-GCL-Net/assets/162021896/b7089274-8c72-4d68-88dc-637570f2cfe3)
+![image](https://github.com/WJHjianhua/NLA-GCL-Net/blob/main/Fig/FIGs3dis.jpg?raw=true)
 
 
