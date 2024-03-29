@@ -6,7 +6,7 @@ URL: https://drive.google.com/drive/folders/1xd6oc0yJFQ74r54zVJCTGypohvv7ajXG?us
 Unzip the downloaded "data_release.zip" file to ensure that the directory structure is as follows: /....../data/Dataset/SensatUrban/data_release/. Please ensure that the "train" and "test" folders under data_release/ remain unchanged. When obtaining the project, if the data/Dataset/SensatUrban/ directory does not exist, it will need to be created manually or using a command.
 
 ### 1.2 S3DIS
-URL: http://buildingparser.stanford.edu/dataset.html
+URL: https://cvg-data.inf.ethz.ch/s3dis/
 
 Download the files named "Stanford3dDataset_v1.2_Aligned_Version.zip". Uncompress the folder and move it to /data/S3DIS.
 
